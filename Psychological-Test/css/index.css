@@ -6,15 +6,17 @@ body{
   	height: 100vh;
 	background: linear-gradient(to bottom, #333399, #3e3499); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
+
 .sub-main,.main{
-	top:30%;
+	top:25%;
 	margin: auto;
     width: 90%;
-    max-width: 620px;
+    max-width: 660px;
     position: relative;
 }
-.sub-main{
-	top:20%;
+.indeximg{
+	width:100%;
+	object-fit: cover;
 }
 .main .top{
 	width:100%;
@@ -28,15 +30,21 @@ body{
 	font-size: 1.3rem;
 }
 .top .ex{
+	width:500px;
 	margin-top: 40px;
 	font-size: 1.8rem;
+}
+.image{
+	border-radius: 40px;
+	overflow: hidden;
+	box-shadow: 5px 5px 5px #323284;
 }
 .bottom{
 	margin:80px auto 0 auto;
 	text-align: center;
 }
 .start{
-	width: 550px;
+	width: 620px;
 	margin:0 auto 0 auto;
 }
 .startbutton{

@@ -16,6 +16,7 @@ body{
 	transform: translate(-50%);
 	position: relative;
 }
+
 .container-left,.top{
 	background-color: white;
 	border:1px solid white;
@@ -68,7 +69,7 @@ body{
 .rebutton{
 	width: 100%;
 	text-align: center;
-	border-radius: 15px;
+	border-radius: 13px;
 	font-size: 1.7rem;
 	padding-top: 20px;
 	padding-bottom: 20px;
@@ -85,4 +86,7 @@ body{
 .moretext{
 	text-align: center;
 	font-size: 1.3rem;
+}
+.container-left,.top,.rebutton{
+	box-shadow: 4px 4px 4px #2b2687 ;
 }

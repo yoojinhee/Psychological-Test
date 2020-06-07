@@ -120,7 +120,6 @@ function radio(page,answer){
 	document.getElementsByClassName("selects")[Number(page)].append(radio);
 	radio.name="test"+page;
 	radio.value=answer;
-
 	var an=document.createElement('span');
 	document.getElementsByClassName("selects")[Number(page)].append(an);
 	an.innerHTML=answer+"<br>";
