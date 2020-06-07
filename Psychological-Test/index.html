@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>싸이코패스 심리 테스트</title>
+	<style>
+		@import url("css/index.css");
+	</style>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="js/fullpage.js"></script>
+	<script src="js/index.js"></script>
+	<script>
+		$(document).ready(function() {
+		    $('#fullpage').fullpage({
+		        //options here
+		        licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
+		        autoScrolling:true,
+		        scrollHorizontally: true
+		    });
+		});
+	</script>
+</head>
+<body id="body" onload="createSection()" onmousewheel="test()">
+	<div id="fullpage">
+		<div class="section">
+			<div class="main">
+				<div class="top">
+					<div class="title">"싸이코패스"</div>
+					<div class="sub-title">감정적 유대감을 가지기 어렵고 감정조절을 못함</div>
+					<div class="ex">당신은 싸이코패스인가요?</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

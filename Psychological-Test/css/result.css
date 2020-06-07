@@ -1,0 +1,88 @@
+body{
+	margin:0;
+}
+.more1:after,.container:after { content:""; clear:both; display:block; }
+
+.wrapper{
+	width: 100vw;
+  	height: 100vh;
+	background: linear-gradient(to bottom, #333399, #852bd0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.container{
+	/*border:1px solid gray;*/
+	width: 900px;
+	top:20%;
+	left:50%;
+	transform: translate(-50%);
+	position: relative;
+}
+.container-left,.top{
+	background-color: white;
+	border:1px solid white;
+}
+.container-left{
+	border-radius: 25px;
+	float:left;
+	width:490px;
+}
+.container-left .image,.container-left .explain{
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;	
+}
+.container-left .image{
+	text-align: center;
+	margin-bottom: 30px;
+	margin-top: 30px;
+	border-bottom: 1px solid gray;
+}
+.container-left .explain{
+	text-align: center;
+	margin-bottom: 30px;
+}
+.container-right{
+	width:390px;
+	float:right;
+}
+.top{
+	border-radius: 16px;
+}
+.title{
+	margin-top: 13px;
+	font-size: 1.7rem;
+	text-align: center;
+}
+.mores,.count{
+	width:80%;
+	margin:5px auto 20px auto;
+}
+.count{
+	font-size: 2.8rem;
+	text-align: center;
+	padding-bottom: 4px;
+	border-bottom: 1px solid gray;
+}
+.bottom,.top{
+	width:100%;
+}
+.rebutton{
+	width: 100%;
+	text-align: center;
+	border-radius: 15px;
+	font-size: 1.7rem;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin-top: 10px;
+	border:1px solid white;
+}
+.more1 .image{
+	float:left;
+}
+.more1 .explain{
+	padding-top:9%;
+	font-size: 1.2rem;
+}
+.moretext{
+	text-align: center;
+	font-size: 1.3rem;
+}
