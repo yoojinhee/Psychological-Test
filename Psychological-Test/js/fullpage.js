@@ -2450,12 +2450,12 @@
                     }
                     break;
 
-                //End
-                case 35:
-                     if(isScrollAllowed.k.down){
-                        moveTo( $(SECTION_SEL).length );
-                    }
-                    break;
+                // //End
+                // case 35:
+                //      if(isScrollAllowed.k.down){
+                //         moveTo( $(SECTION_SEL).length );
+                //     }
+                //     break;
 
                 //left
                 case 37:
@@ -3009,6 +3009,8 @@
 
             //adding the current anchor
             addClass($body, VIEWING_PREFIX + '-' + text);
+            test();
+            
         }
 
         /**

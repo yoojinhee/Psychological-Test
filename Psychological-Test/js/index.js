@@ -48,13 +48,15 @@ function test(){
 	var className=$('#body').attr("class");
 	var str=className.split('-');
 	var test=document.getElementsByClassName("test")[Number(str[2])];
-	if(!document.getElementsByClassName("fp-tableCell")[Number(str[2])+1].id){
-		element(str[2],test.id);
-		radio(str[2],"예");
-		radio(str[2],"아니오");
-		radio(str[2],"잘 모르겠다");
-		if(str[2]==que.length-1){
-			button(str[2]);
+	if(document.getElementsByClassName("fp-tableCell")[Number(str[2])+1]){
+		if(!document.getElementsByClassName("fp-tableCell")[Number(str[2])+1].id){
+			element(str[2],test.id);
+			radio(str[2],"예");
+			radio(str[2],"아니오");
+			radio(str[2],"잘 모르겠다");
+			if(str[2]==que.length-1){
+				button(str[2]);
+			}
 		}
 	}
 }
@@ -87,17 +89,21 @@ function button(page){
 	button.value="결과 확인하기"
 	document.getElementsByClassName("start")[0].append(button);
 	button.addEventListener('click', function(event) {
-   	location.href="result.html?re="+result();
+		result();
 	})
 }
 
 function result(){
 	var result=new Array();
+	var value=new Array();
 	var recount=0;
+	var count=0;
+
 	for(var i=0; i<que.length; i++){
 		result[i]=document.getElementsByName("test"+String(i));
 		for(var j=0; j<result[i].length; j++){
 			if(result[i][j].checked){
+				count++;
 				if(result[i][j].value=="예"){
 					recount+=3;
 				}
@@ -111,8 +117,13 @@ function result(){
 			}
 		}
 	}
-	return recount;
+	if(count!=que.length){
+		alert("체크 안한 항목이 존재합니다.");
+	}else{
+		location.href="result.html?re="+recount;
+	}
 }
+
 function radio(page,answer){
 	var radio=document.createElement('input');
 	radio.type='radio';
