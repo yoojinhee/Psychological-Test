@@ -1,7 +1,7 @@
 body{
 	margin:0;
 }
-.more1:after,.container:after { content:""; clear:both; display:block; }
+.more:after,.container:after { content:""; clear:both; display:block; }
 
 .wrapper{
 	width: 100vw;
@@ -76,10 +76,10 @@ body{
 	margin-top: 10px;
 	border:1px solid white;
 }
-.more1 .image{
+.more .image{
 	float:left;
 }
-.more1 .explain{
+.more .explain{
 	padding-top:9%;
 	font-size: 1.2rem;
 }
